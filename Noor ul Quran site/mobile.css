@@ -1,0 +1,106 @@
+body{
+    background-image : url(images/mobile_o.jpg);background-size: 100%; background-repeat: no-repeat;
+    /*background-position-x: 50%;
+    background-position-y: 18%;*/
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+div.container{
+    margin-top: 23%;
+}
+
+h1{
+     text-align: center;
+    margin-left: -8px; margin-right: -8px;
+    margin-top: 9%;
+}
+
+h1 a{
+   font-size: 1.8em; text-decoration: none; color: brown; text-shadow: -2px -2px 2px #e49a9a, 4px 4px 4px #000;
+   font-family: Al Qalam Quran Majeed Web; text-align: center;
+}
+h1 a:hover{
+    text-shadow: -2px -2px 2px #e49a9a, 7px 7px 8px #000;
+}
+
+#mobileHeader{
+    width: 100%;
+    padding-top: 2%;
+}
+
+.Allah_mobile{
+    text-align: right;
+}
+.Rasool_mobile{
+    text-align: left;
+}
+
+.head{
+    display: none;
+}
+.mobcom{
+    line-height: 2.3em;
+    font-size: 1.6em;
+    color: #001a00;
+    text-shadow: 1px 1px 0px #ff8000, -1px -1px 0px #ff8000;
+    display: inline-block;
+    width: 49%;
+}
+
+div{
+        text-align: center;
+}
+div.com{
+    display: block; color: white;
+    text-align: center;
+}
+
+iframe{
+    display: none;
+}
+
+
+div div h1{
+    background-color: 	 #ff9933;
+    padding: 0.3em;
+    color: #253300;
+    font-family: Andalus;
+    font-size: 1.5em;
+}
+
+div div h2{
+    display: none;
+}
+ audio{
+     width: 100%;
+ }
+
+a span{
+    display: block;
+    margin: auto;
+    margin-top: 1.7em;
+    margin-bottom: 9em;
+    background-color: #cc6600;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width:70%;
+}
+a span:hover{
+    background-color: white ;
+    color: #cc6600;
+    box-shadow: 7px 7px 11px #4d4d4d;
+}
+a span:active{
+    box-shadow: -2px -2px 6px #4d4d4d;
+}
+.com a{
+    color: white;
+}

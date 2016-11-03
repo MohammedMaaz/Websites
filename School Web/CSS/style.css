@@ -1,0 +1,803 @@
+body{
+    text-align: center; font-family: Arial, Helvetica, sans-serif; background-color: #ffffcc;
+}
+
+a{
+    text-decoration: none;
+}
+
+div.upperCover{
+    /* 
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwx8bzNn9Y7oJ4f30NqfZEN8uTwcDE6Q-v79i6bCmvawiCiEIp);
+    background-repeat: no-repeat; background-position: center center; background-size: cover;
+      */ 
+    border-top: 4px solid #00cc00; margin: -8px; padding: 0px;
+}
+
+
+/* Tag */
+div.tag{
+     display: inline-block;
+     position: absolute;
+     left: 5%; margin-top: -113px;
+     transition: all .5s;
+}
+div.tag:hover{
+    margin-top: -6px;
+}
+div.tag div{
+    display: inline-block; vertical-align: 80px; margin-left: 0.5em; text-align: left; line-height: 1.75em;
+}
+div.tag div div{
+    display: block; font-family: Arial, Helvetica, sans-serif; color: #800080; font-weight: bold;
+}
+div.tag div div:hover{
+    color: #00cc00;
+}
+
+/* Search */
+div.search{
+    position: absolute;
+    right: 1%; top: 3%;
+    display: inline-block;
+}
+div.search input, div.cSearch input{
+    width: 50px;
+    background: rgba(90, 12, 90, 0.03) url('../images/searchicon.png') no-repeat 9px center;
+    border: 1px solid rgba(102, 0, 51,0.5); outline: none; border-radius: 10em;
+    padding: 5px 10px 5px 32px; font-size: 93%; font-family: Arial, Helvetica, sans-serif;
+    transition: all .5s; color: #4d0028;
+}
+div.search input:hover, div.cSearch input:hover{
+    border: 1px solid rgba(102, 0, 51,0.6); width : 130px; background-color: #fff;
+}
+div.search input:focus, div.cSearch input:focus{
+    border:1px solid limegreen; background-color: #fff; box-shadow: 1px 1px 6px #800080;
+    width : 130px;
+}
+
+
+/* Logo */
+div.mainMob_Cont{
+    display: block; text-align: center;
+}
+.mob_menu_img{
+    display: none;
+}
+.hidden_menu{
+    display: none;
+}
+.mainMob_Cont h2{
+    float: left; margin-top: 25px; margin-left: 10px; padding: 0px;
+}
+.hidden_menu div{
+    display: flex; flex-direction: row; position: absolute;
+}
+.hidden_menu ul{
+    list-style: none; padding: 0px; margin: 0px; display: block; width: 140px;
+     background-color: #660066; font-size: 0.9em; border-top: 4px solid #00cc00;
+}
+.hidden_menu ul li{
+    line-height: 2.6em;  padding: 0px;
+}
+.hidden_menu ul li a{
+    display: block; color: #fff;  padding: 0.3em;
+}
+.hidden_menu ul li a:hover{
+    background-color: #4d0028; transition: all 0.5s;
+}
+.heading_mobile{
+    display: flex;
+}
+div.cover_mob img{
+    width: 100%; min-height: 133px;
+}
+div.covCont_menu{
+    display: flex; flex-direction: row; width: 100%; 
+}
+.mainMob_Cont > a:focus ~ div.covCont_menu .hidden_menu{
+    display: flex;
+}
+.hidden_menu:hover{
+    display: flex;
+}
+.heading_mobile div{
+    margin-left: auto; margin-right: auto; margin-top: 1.5em;
+}
+.heading_mobile div h1{
+     font-family: 'Arima Madurai', cursive; font-weight: 900; margin-top: 0.16em; margin-bottom: 0.5em;
+     color: #4d0028; text-shadow: 0px 1px 2px #e6e6e6;
+}
+.heading_mobile div img:hover{
+    -webkit-filter: brightness(150%);
+}
+
+@media(max-width:497px){
+    a.mob_menu_img:hover ~ div.covCont_menu .hidden_menu{
+    display: flex;
+    }
+}
+
+/* Navigation Bar */
+div.navBar{
+    background-color: #660066;
+    padding-left: 8px; padding-right: 10px;
+    text-align: center; 
+}
+.menu{
+    text-align: left; display: inline-block; width: 70%; min-width: 430px;
+    margin-left: 2px; margin-right: 0px;
+}
+.logIn{
+    text-align: right; display: inline-block; width: 29%; min-width: 186px; 
+    margin-left: 0px;
+}
+div.navBar ul{
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+}
+div.navBar ul li{
+    display: inline-block; font-size: 1.1em; font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 20px 15px 20px; color: #fff;
+}
+div.navBar ul li:hover{
+    background-color: #4d0028; transition: all 0.5s;
+}
+
+/* Cover Content */
+div.coverContainer{
+     display: flex; flex-direction: column;
+    text-align: justify;
+    border-top: 4px solid #00cc00;
+}
+div.coverContainer div{
+    color: #cc80ff; font-size: 1.15em; font-family: Arial, Helvetica, sans-serif;
+    padding: 2em; padding-top: 1.7em; padding-bottom: 0em; background-color: #0d0d0d;
+    margin-top: 0px; box-shadow: 0px -23px 31px #0d0d0d;
+}
+div.coverContainer div p{
+    text-align: right; font-size: 0.73em;
+}
+
+/* Buttons Main */
+div.buttons_main{
+    margin: 0.5em; margin-top: 1.4em; margin-bottom: 1.5em;
+}
+div.buttons_main span{
+    padding: 2em 5em 2em 5em; background-color: purple; display: inline-block;
+    font-weight: 700; color: #fff;
+}
+div.buttons_main span:hover{
+    background-color: #4d0028;
+}
+div.buttons_main span.button1{
+    margin-right: 0.13em;
+}
+div.buttons_main span:active{
+    color: #00cc00;
+}
+@media(max-width: 770px){
+    div.buttons_main span.button1{
+    margin: 0px; margin-bottom: 1em;
+    }
+    div.buttons_main span{
+        display: block; margin: 0em;
+        margin: auto;
+    }
+    div.tag{
+        display: none;
+    }
+    div.upperCover{
+        border-top: none;
+    }
+div.mainMob_Cont{
+    display: block;
+}
+.mob_menu_img{
+    display: inline;
+}
+    .heading_mobile div{
+        margin-top: 1.2em;
+    }
+    .heading_mobile div h1{
+       font-size: 1.75em; margin-top: 0; margin-bottom: 0;
+    }
+    .heading_mobile div img{
+        display: none;
+    }
+    div.search{
+    display: none;
+    }
+    div.navBar{
+    display: none;
+    }
+       
+}
+
+/* Events */
+div.events{
+    float: left;
+    width: 30%;
+}
+div.eventsHeading{
+    margin-top: 3.5em; margin-bottom: 1em; font-size: 1.4em; font-weight: 600;
+    color: #009900;
+}
+div.eventsContent{
+     margin-top: 3em;
+}
+div.eventsGallery{
+    display: block; margin-bottom: 1.8em;
+}
+div.eventsGallery a:hover > div.bar{
+    background-color: #4d0028;
+}
+div.eventsGallery div{
+    display: inline-block; vertical-align: middle;
+}
+div.date{
+    min-width: 51px;
+}
+div.date ul{
+    list-style: none; display: inline-block; 
+    height: auto; padding-left: 0px;
+    color: #800080;
+}
+div.date ul li{
+    line-height: 1.25em;
+}
+li.eventDay{
+    font-size: 1.6em; font-weight: bold;
+}
+li.eventTime{
+    font-size: 0.8em;
+}
+div.bar{
+   background-color: rgba(90, 12, 90, 0.3); width: 7px; height: 85px; 
+   margin-right: 4px; margin-left: 4px;
+}
+div.eventInfo{
+    font-size: 0.8em; font-weight: bold; width: 40%; text-align: left;
+    color: #800080; line-height: 1.5em; overflow-wrap: break-word;
+}
+
+/* News */
+div.news{
+    display: inline-block; text-align: center; padding-bottom: 10em; margin-bottom: 1.5em;
+    width: 39%;
+    
+    -webkit-box-shadow: 0px 4px 11px 0px dimgray;
+    -moz-box-shadow: 0px 4px 11px 0px dimgray;
+    box-shadow: 0px 4px 11px 0px dimgray, 0px 4px 11px 0px dimgray;
+}
+div.newsHeading{
+    margin-top: 1em; margin-bottom: 0.81em; font-size: 1.8em;
+    color: #660066;
+}
+.newsGallery{
+    margin-top: 2.6em;
+}
+div.newsContent{
+    width: 90%; padding: 0px; margin: auto; 
+}
+div.newsContent h3{
+    text-align: left; margin-top: 0.7em; margin-bottom: 0px;
+    font-size: 1.07em; color: #800080; line-height: 1.5em;
+}
+div.info{
+    text-align: left; font-size: 0.9em; margin-top: 0.3em; line-height: 1.4em;
+}
+div.info span{
+    color: #800080;
+}
+.readMore{
+   color: #009900;
+}
+.readMore:hover{
+    color: #0e0b0d;
+}
+
+/* Blog */
+div.blog{
+    float: right;
+    width: 30%;
+}
+div.blogHeading{
+    margin-top: 3.5em; margin-bottom: 1em; font-size: 1.4em; font-weight: 600;
+    color: #009900;
+}
+.blogGallery{
+    margin-top: 4em;
+}
+div.blogContent{
+    width: 68%; padding: 0px; margin: auto; margin-top: 3em;
+}
+div.blogContent h3{
+    text-align: center; margin-top: 0.7em; margin-bottom: 0px;
+    font-size: 0.9em; color: #660066; line-height: 1.5em;
+}
+div.blogContent a:hover > h3{
+    color: #009900;
+}
+div.blogContent a:hover > img{
+    -webkit-filter: brightness(125%);
+}
+
+@media(max-width: 770px){
+    div.events{
+        float: none; width: 48%; margin: auto; display: inline-table; margin-top: -2em;
+        
+    }
+    div.blog{
+       float: none; width: 51%; margin: auto; display: inline-table; margin-top: -2em;
+       
+    }
+    div.news{
+        display: block; width: 95%; margin: auto; margin-top: 3.8em; padding-top: 0.01em;
+        
+    }
+    div.logoBottom h1{
+        font-size: 1.45em; font-family: 'Arima Madurai', cursive;
+    }
+    
+}
+
+/* Footer */
+div.footerContainer{
+    opacity: 80%;
+    background-color: purple; background-image: url(../images/logo_o.png); background-repeat: no-repeat;
+    background-position: center center; border-top: 4px solid #008000; background-size: 160px;
+}
+ul.menuBottom{
+    padding: 0px;
+}
+ul.menuBottom li{
+    display: inline-block; 
+    padding-right: 2em; padding-left: 2em; border-right: 1px solid #fff; line-height: 3em;
+}
+@media(max-width: 520px){
+    ul.menuBottom li{
+        border: none;
+    }
+    div.events{
+        float: none; width: 90%; margin: auto; display: block; margin-top: -0.8em;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 4px 11px 0px dimgray;
+    -moz-box-shadow: 0px 4px 11px 0px dimgray;
+    box-shadow: 0px 4px 11px 0px dimgray, 0px 4px 11px 0px dimgray;
+    padding-bottom: 0.5em;
+    }
+    div.eventsHeading{
+        padding-top: 1.2em;
+    }
+    div.blog{
+       float: none; width: 90%; margin: auto; display: block; margin-top: -0.8em;
+       background-color: #fff;
+       -webkit-box-shadow: 0px 4px 11px 0px dimgray;
+    -moz-box-shadow: 0px 4px 11px 0px dimgray;
+    box-shadow: 0px 4px 11px 0px dimgray, 0px 4px 11px 0px dimgray;
+    padding-bottom: 2.5em;
+    }
+    div.blogHeading{
+        padding-top: 1.2em;
+    }
+    div.news{
+        display: block; width: 90%; margin: auto; margin-top: 4em; padding-top: 0.01em;
+        background-color: #fff;
+    }
+    div.sideMenu{
+        width: 95%;
+    }
+    div.coursesSec{
+        width: 95%;
+    }
+    .heading_mobile div h1{
+       font-size: 1.58em; margin-top: 0.12em; margin-bottom: 0;
+    }
+}
+ul.menuBottom li a{
+    color: #fff;
+}
+ul.menuBottom li a:hover{
+    text-decoration: underline;
+}
+div.logoBottom{
+    margin-top: 3em;
+}
+div.logoBottom h1{
+    font-family: 'Arima Madurai', cursive; display: inline-block;
+    color: #fff; text-shadow: 5px 0px 7px #000; margin-bottom: 0.35em;
+}
+div.logoBottom span{
+    display: block; margin-top: 0px; color: #fff; line-height: 1.4em;
+}
+div.footerContainer div.SC{
+    display: flex;
+}
+
+    
+
+@media(max-width: 580px){
+    div.footerContainer div.SC{
+        display: block;
+    }
+    div.logoBottom{
+        margin-top: 0em;
+    }
+    ul.menuBottom li{
+    padding-right: 1em; padding-left: 1em;
+    }
+    
+}
+div.social{
+    display: inline-block; width: 50%; color: #fff; margin-top: 2em;
+}
+div.social div{
+    margin-top: 1.1em;
+}
+div.social img{
+     -webkit-filter: contrast(-3000%); -webkit-filter: brightness(3000%);
+     width: 30px; margin-right: 1em; 
+}
+div.social img:hover{
+    -webkit-filter: none; background-color: #fff;  transition: all 0.3s;
+}
+
+div.contact{
+    display: inline-block; width: 50%; color: #fff; margin-top: 2em;
+}
+div.contact div{
+    margin-top: 1.1em;
+}
+div.contact img{
+    width: 30px; height: 26px; margin-right: 1em;
+}
+div.contact img:hover{
+    background-color: #009900;
+}
+
+
+/* Courses CSS */
+
+/* Upper Menu and Logo */
+div.c_add_head{
+    display: none;
+}
+.cUpperCont{
+    padding: 0em 1.7em; margin-top: 1em; margin-bottom: 2.05em;
+}
+.cUpperCont span{
+    padding: 0px;
+}
+.head{
+    display: inline-block; text-align: left; width: 44%;
+}
+.head h1{
+    display: inline-block; font-family: 'Arima Madurai', cursive; font-weight: 900; margin: 0px; line-height: 35px;
+    font-size: 1.75em; color: #4d0028;
+}
+.head img{
+    display: inline-block; vertical-align: -0.36em; padding: 0px;
+}
+.head img:hover{
+    -webkit-filter: brightness(150%);
+}
+.menuSec{
+   display: inline-block; text-align: right; width: 55%;
+}
+.menuSec ul{
+    padding: 0px; margin: 0px;
+}
+.menuSec ul li{
+    display: inline-block; padding-right: 1.5em; font-size: 0.94em;
+}
+.menuSec ul li a{
+    color: #800080; font-weight: bold;
+}
+.menuSec ul li a:hover{
+    color: #00cc00;
+}
+#searchBox{
+    padding-right: 0px;
+}
+@media(max-width: 1000px){
+    div.search input:hover, div.cSearch input:hover{
+    border: 1px solid rgba(102, 0, 51,0.6); width: 70px; background-color: #fff;
+    }
+    div.search input:focus, div.cSearch input:focus{
+        width: 70px;
+    }
+}
+@media(max-width: 940px){
+    #searchBox{
+        display: none;
+    }
+    .menuSec ul li{
+        padding-right: 1.1em;
+    }
+    #lastLi{
+        padding-right: 0px;
+    }
+    .head{
+        width: 55%;
+    }
+    .menuSec{
+        width: 44%;
+    }
+}
+@media(max-width: 770px){
+    .cUpperCont{
+        display: none;
+    }
+    div.c_add_head{
+        display: flex;
+    }
+    
+}
+
+/* Nav Bar Adjustmen */
+.c_mainMobCont{
+    margin-left: -8px; margin-right: -8px;
+}
+
+
+/* Course Container + Side Menu */
+.courseCont{
+    margin-right: -8px; margin-left: -8px; display: flex; height: 166.5em; overflow: auto;
+}
+div.coursesSec{
+    width: 75%; display: inline-block; padding-right: -10px; margin: 0px; text-align: center; 
+    height: 100%;
+}
+div.course_des{
+    width: 88%; text-align: left; margin: auto; margin-top: 2.32em; padding: 0px;
+}
+#course_heading{
+   margin: 0px; padding: 0px; display: block; font-size: 2em; font-weight: 600; letter-spacing: 0.08;
+   margin-bottom: 0.52em;
+}
+#course_heading a{
+    color: #660033;
+}
+span.c_tag{
+    margin: 0px; padding: 0px; letter-spacing: 0.1em;  word-spacing: 0.25em; line-height: 1.64em;
+    color: #33001a;
+}
+.courseOff{
+    padding-left: 0.8em; padding-right: 0.8em; margin-top: 4em;
+}
+.courseOff h1 a{
+    color: #660066; 
+}
+.courseOff span{
+    display: inline-flex; flex-direction: column; width: 43%; background-color: white;
+    box-shadow: 0px 2px 11px 1px dimgray, 0px 2px 11px 0px dimgray;
+}
+.courseOff span h3{
+    text-align: left; padding-left: 1em; padding-right: 1em;  display: inline-block;
+}
+.courseOff span h3 a{
+    color: #660066;
+}
+.moreDetails{
+    text-align: right; padding-right: 1em; margin-top: 0px; margin-bottom: 0.85em;
+}
+.moreDetails a{
+    color: #ff6600; font-size: 0.84em;
+}
+.moreDetails a:hover{
+    color: purple;
+}
+.cDetails{
+    text-align: left; padding-left: 1em; font-size: 0.95em; margin-top: 0.1em; margin-bottom: 0px;
+    color: #660066; display: none;
+}
+.moreDetails a:focus + .cDetails{
+    display: block;
+}
+.courseOff span img{
+    width: 100%;
+}
+.courseOff > span:hover img{
+    -webkit-filter: brightness(60%);
+}
+.item1{
+    margin-right: 2em;
+}
+a.regButton{
+    color: #009900; font-weight: bold; border-radius: 0.4em; float: right;
+    padding: 1em 1.8em; border: 2px solid #009900; transition: all 0.4s;
+    margin-top: 0.6em; margin-right: 1em; margin-bottom: 0.5em;
+}
+.regButton:hover{
+    background-color: #660066; border: 2px solid #660066; color: #00e600;
+}
+.regButton:active{
+    border: none;
+}
+.regCont form{
+    text-align: left; padding-left: 1em; padding-right: 1em;
+}
+.regCont form p{
+    display: inline-block; padding: 0px; font-size: 0.8em; margin-right: 5px; color: #4d0028;
+    width: 5.5em;
+}
+.regCont form input{
+    display:inline-block; width: 114px; margin-bottom: 1em; padding:4px 7px; border: 1px solid #660066;
+    border-radius: 5px; color: #660066; transition: all 0.4s;
+}
+.regCont form input:hover{
+    box-shadow: 2px 2px 5px #660066;
+}
+.regCont form input:focus{
+    outline: none; box-shadow: 2px 2px 1px #660066;
+}
+
+div.sideMenu{
+    width: 24.5%; float: left; background-color: white; height: 100%; margin-top: 0px; margin-bottom: 0px;
+    box-shadow: 2px 0px 8px #404040;
+}
+.sideMenu > div > a{
+    display: none;
+}
+.sideMenu ul{
+    list-style: none; text-align: left; padding: 0px; padding-left: 6%; margin-top: 2.4em; padding-right: 6%;
+}
+.sideMenu ul li{
+    line-height: 1.5em; font-weight: 600; padding: 0px;
+    margin-bottom: 1.9em; 
+}
+.sideMenu ul li a{
+    display: inline-block; padding-top: 0.35em; padding-bottom: 0.35em; padding-left: 0.3em; color: #00b300;
+    border-left: 4px solid white;
+}
+.sideMenu ul li a:hover{
+    border-left: 4px solid #660066;
+}
+
+/** Footer adjustment **/
+.cFoot{
+    margin-left: -8px; margin-right: -8px;
+}
+
+/* Mobile Menu Adjustment */
+.cMobMenu{
+    margin-left: -8px;
+}
+
+/* Home Description */
+div.home_des{
+          width: 88%; margin-bottom: 5em;
+        }
+
+@media(max-width: 770px){
+    .courseOff span{
+    display: flex; flex-direction: column; width: 100%; margin: auto; padding-bottom: 3em;
+    }
+    .courseCont{
+        height: auto; display: block;
+    }
+    div.coursesSec{
+    width: 95%; display: block; padding-right: -10px; margin: 0px; text-align: center; margin-top: 0px;
+    margin: auto;
+    }
+    .courseOff{
+        margin-bottom: 8em;
+    }
+    div.sideMenu{
+        float: none; width: 90%; margin: auto; margin-bottom: 3em; border-radius: 20px; margin-top: 0.55em;
+        box-shadow: 1px 1px 7px 1px #404040; border: 2px solid #800080; background-color: #ffffcc;
+    }
+    div.course_des{
+        width: 93%;
+    }
+    div.home_des{
+        margin-bottom: 4em; margin-left: auto;
+    }
+    div.sideMenu div > a{
+        display: block; padding-top: 0.55em; padding-bottom: 0.55em; color: #660066; font-weight: 700;
+        font-size: 1.3em; letter-spacing: 0.07em; word-spacing: 0.34em;
+    }
+    .sideMenu ul{
+        display: none; text-align: center; padding: 0px; margin: 0px;
+    }
+    div.sideMenu div:hover > ul{
+        display: block;
+    }
+    .sideMenu ul li a{
+        display: block; border: none;
+    }
+    .sideMenu ul li{
+        margin-bottom: 0px; border: none; padding-top: 0.4em; padding-bottom: 0.4em;
+    }
+    .sideMenu ul li:hover{
+        background-color: #660066; border: none; transition: all 0.3s;
+    }
+}
+
+@media(max-width: 770px) and (min-width: 600px){
+     div.sideMenu{
+        width: 72%; margin-top: 1em;
+    }
+    div.coursesSec{
+        width: 75%;
+    }
+}
+
+ /** Campuses **/
+ .campOff{
+    width: 93%; margin-left: auto; margin-right: auto; padding: 0px; padding-left: 0.35%;
+ }
+ .campDes{
+     text-align: left; font-size: 15px; word-spacing: 0.21em; letter-spacing: 0.06em;
+     line-height: 1.5em; color: #33001a;
+ }
+ .campDes iframe{
+     float: right; margin: 0.4em; margin-right: 0px;
+     width: 333.333333px; height: 250px;
+ }
+ #campCont{
+     height: 266em;
+ }
+ a.reg_camp{
+     float: none; display: block; width: 12em; margin: auto; margin-top: 1em; margin-bottom: 7em;
+     text-align: center; border-radius: 7px;
+ }
+ 
+ #mainCamp{
+     width: 93%; margin-left: auto; margin-right: auto;
+ }
+ @media(max-width: 1100px) and (min-width: 965px){
+     #campCont{
+     height: 284em;
+ }
+ }
+ @media(max-width: 965px) and (min-width: 866px){
+     #campCont{
+     height: 304em;
+ }
+ }
+ @media(max-width: 866px) and (min-width: 770px){
+     #campCont{
+     height: 324em;
+     }
+ }
+ @media(max-width: 770px) and (min-width: 600px){
+    div.campOff{
+        width: 93%;
+    }
+    #mainCamp{
+        width: 93% !important;
+    }
+}
+@media(max-width: 770px){
+    #campCont{
+        height: auto; display: block;
+    }
+    #top_ind{
+    display: none;
+    }
+    .campOff{
+        width: 96%;
+    }
+    #mainCamp{
+        width: 96%; margin-left: auto; margin-right: auto; padding-left: 1.8%;
+    }
+}
+@media(max-width: 550px){
+    .campDes iframe{
+    width: 100%;
+ }
+}
+
+/* Top Indicator */
+#top_ind{
+    position: fixed; right: 1%; bottom: 1%;
+}
+#top_ind img{
+    -webkit-filter: opacity(60%);
+}
+#top_ind:hover > img{
+    -webkit-filter: opacity(100%);
+}

@@ -1,0 +1,121 @@
+body{
+    background-image : url(images/Quran_o.jpg);background-size: 150%; background-repeat: no-repeat;
+    /*background-position-x: 50%;
+    background-position-y: 18%;*/
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+#mobileHeader{
+    display: none;
+}
+
+div.container{
+    margin-top: 3.5em;
+}
+
+h1{
+     text-align: center;
+    background-color: rgba(230, 92, 0, 0.1);
+    margin-left: -8px; margin-right: -8px;
+}
+
+#titleCont{
+    display: inline;
+}
+
+h1:hover{
+    background-color: rgba(230, 115, 0, 0.3); color: #394d00;
+}
+
+h1 a{
+   font-size: 1.8em; text-decoration: none; color: brown; text-shadow: -2px -2px 2px #e49a9a, 4px 4px 4px #000;
+   font-family: Al Qalam Quran Majeed Web; text-align: center;
+}
+h1 a:hover{
+    text-shadow: -2px -2px 2px #e49a9a, 7px 7px 8px #000;
+}
+
+.yaAllah{
+    
+    float: right;
+    margin-right: 4%;
+}
+.yaRasool{
+    float: left;
+    margin-left: 4%;
+}
+.head{
+    line-height: 2.3em;
+}
+
+div{
+        text-align: center;
+}
+div.com{
+    display: inline-block; color: white;
+    min-width: 550px;
+    text-align: center;
+}
+
+iframe{
+    display: inline-block;
+}
+
+div div h1{
+    width: 458px;
+    margin: auto;
+    background-color: rgba(230, 115, 0,0.6);
+    padding: 0.3em;
+    color: #004d00;
+    font-family: Andalus;
+}
+div div h1:hover{
+    background-color: rgba(230, 115, 0,0.6); color: #004d00;
+}
+
+div div h2{
+    width: 462px;
+    margin: auto;
+    background-color: rgba(230, 115, 0,0.6);
+    padding: 0.3em;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ div div h2:hover{
+     background-color: rgba(230, 115, 0,0.6); color: #000;
+ }
+ 
+ div audio{
+     display: none;
+ }
+
+a span{
+    display: block;
+    margin: auto;
+    margin-top: 0.8em;
+    margin-bottom: 9em;
+    background-color: #cc6600;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width:282px;
+}
+a span:hover{
+    background-color: white ;
+    color: #cc6600;
+    box-shadow: 7px 7px 11px #4d4d4d;
+}
+a span:active{
+    box-shadow: -2px -2px 6px #4d4d4d;
+}
+.com a{
+    color: white;
+}
+

@@ -1,0 +1,23 @@
+li{
+    display: inline;
+}
+
+ul ul li{
+    display: inline; color: red;
+}
+
+ul ul li ul li{
+    display: block; color: blue;
+}
+
+ul ul li ul{
+    display: none;
+}
+
+ul ul li:hover{
+    display: block; color: yellow;
+}
+
+ul ul li ul li:hover{
+    display: block;
+}

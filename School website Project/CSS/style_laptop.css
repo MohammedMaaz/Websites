@@ -1,0 +1,76 @@
+/* 
+    font-family: 'Raleway', sans-serif;
+*/
+div.HeaderContainer{
+    width: 100%;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+ul{
+    display: inline-block;
+        margin-top: 0%; margin-bottom: 0%;
+    padding : 0%; width: 100%;
+            background-color: green;
+}
+li{
+    display: inline-block;
+}
+li.menuList{
+    display: inline-block;
+    width: 14em;
+    margin-right: 7%
+     
+}
+ul.logoContent{
+    display: inline-block;
+    margin-top: 0%; margin-bottom: 0%;
+    padding : 0%;
+    width: 14em;
+    text-align: center;
+        background-color: black;
+        
+}
+
+ul.logoContent li{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif; color: white;
+    vertical-align: middle;
+    margin-right: 0.4em;
+    font-size: 1.3em;
+    
+}
+
+
+ ul.menu{
+    display: inline-block;
+    padding : 0%;
+        margin: 0px;
+        width: 100%;
+        margin-right: 2%;
+}
+
+ul.menu li{
+    display: inline-block;
+    padding-bottom: 0em;
+    vertical-align: middle;
+    padding-top: 0.6em;
+    width: 7em;
+    color: white;
+    font-size: 1em; text-align: center;
+                        height: 1.9em;
+                        
+}
+ul.menu li:hover{
+    background-color: red;
+}
+
+.signup{
+    margin-left: 2em;
+    margin-right: 2%;
+}

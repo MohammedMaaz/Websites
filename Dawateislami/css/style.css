@@ -1,0 +1,38 @@
+body{
+    background-color: #46863C;
+}
+
+div.head_786{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+div.searchDate{
+    border: 1px solid white; display: table; width: 100%;
+}
+
+div.search{
+    display: inline-block;
+}
+div.search input{
+    width: 11em; height: 1.2em;
+    background:  url('../images/searchicon.png') no-repeat center; background-position-x: 96%;
+    background-size: 9px;
+    border: 1px solid #BFEEB7; outline: none; border-radius: 0.1em;
+    
+    font-size: 0.72em; font-family: Arial, Helvetica, sans-serif;
+    padding: 0.25em 17px 0.25em 3px;
+    color: #fff;
+}
+div.search input::-webkit-input-placeholder{
+    font-size: 0.82em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BFEEB7;
+}
+
+div.calender{
+    float: right;
+}
+#date, #month{
+    display: inline-block;
+}
